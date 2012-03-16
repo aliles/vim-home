@@ -49,4 +49,6 @@ Plugins
 
 The following plugins for *Vim* are installed.
 
-* `Pathogen <https://github.com/tpope/vim-pathogen>`_, for managing plugins.
+* `Pathogen <https://github.com/tpope/vim-pathogen>`_, plugin manager
+* `Git <http://www.vim.org/scripts/script.php?script_id=1654>`_ runtime files
+* `Fugitive <http://www.vim.org/scripts/script.php?script_id=2975>`_ Git wrapper
