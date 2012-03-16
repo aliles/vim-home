@@ -29,7 +29,31 @@ Now create a symbolic link from *.vim* to the file *~/.vim/vimrc* ::
 
     $ ln -s .vim/vimrc .vimrc
 
-This link will enable *Vim** to load the settings when started.
+This link will enable *Vim* to load the settings when started.
+
+Finally, by default Git will report new files created by *Vim* in the plugin
+direcotries as untracked files. This can be annoying. The following Git config
+setting will change Git's behaviour to report only changed files that are
+already being tracked. ::
+
+    $ cd ~
+    $ git config diff.ignoreSubmodules untracked
+
+Alternatively the configuration options *dirty* can be used to ignore all
+differences over than those between the head and master.
+
+Updating
+========
+
+Due to the way Git submodules work, it's necessary to update the *Vim*
+configuration and the *Vim* plugins seperately. ::
+
+    $ cd ~/.vim
+    $ git pull
+    $ git submodule foreach git submodule update
+    $ git submodule foreach git submodule pull
+
+Or at least, I think that's how to do it ...
 
 References
 ==========
