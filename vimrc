@@ -15,6 +15,8 @@ set backupdir=~/.vim-tmp
 set directory=~/.vim-tmp
 set encoding=utf-8
 set expandtab
+set foldmethod=indent
+set foldlevel=99
 set hidden
 set history=100
 set hlsearch
