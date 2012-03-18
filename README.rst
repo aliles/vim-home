@@ -53,7 +53,7 @@ configuration and the *Vim* plugins seperately. ::
     $ git submodule foreach git submodule update
     $ git submodule foreach git submodule pull
 
-Or at least, I think that's how to do it ...
+*Or at least, I think that's how to do it ...*
 
 References
 ==========
@@ -76,3 +76,5 @@ The following plugins for *Vim* are installed.
 * `Pathogen <https://github.com/tpope/vim-pathogen>`_, plugin manager
 * `Git <http://www.vim.org/scripts/script.php?script_id=1654>`_ runtime files
 * `Fugitive <http://www.vim.org/scripts/script.php?script_id=2975>`_ Git wrapper
+* `Minibufexpl <http://www.vim.org/scripts/script.php?script_id=159>`_ buffer explorer
+* `PEP8 <http://www.vim.org/scripts/script.php?script_id=2914>`_ Python syntax checker
