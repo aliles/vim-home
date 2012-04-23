@@ -50,10 +50,15 @@ configuration and the *Vim* plugins seperately. ::
 
     $ cd ~/.vim
     $ git pull
+    $ git submodule foreach git submodule init
     $ git submodule foreach git submodule update
-    $ git submodule foreach git submodule pull
+    $ git submodule foreach git checkout master
+    $ git submodule foreach git pull
 
 *Or at least, I think that's how to do it ...*
+
+These instructions were derived from
+`Git Submodules: Adding, Using, Removing, Updating <http://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/>`_
 
 References
 ==========
