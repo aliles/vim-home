@@ -7,8 +7,11 @@ filetype indent on
 
 runtime macros/matchit.vim
 
+let g:solarized_termtrans=1
+
 set autoindent
 set autoread
+set background=dark
 set backup
 set backspace=indent,eol,start
 set backupdir=~/.vim-tmp
@@ -36,3 +39,4 @@ set wildmode=list:longest
 set wildmenu
 
 syntax on
+colorscheme solarized
