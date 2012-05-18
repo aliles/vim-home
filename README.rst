@@ -83,3 +83,4 @@ The following plugins for *Vim* are installed.
 * `Fugitive <http://www.vim.org/scripts/script.php?script_id=2975>`_ Git wrapper
 * `Minibufexpl <http://www.vim.org/scripts/script.php?script_id=159>`_ buffer explorer
 * `PEP8 <http://www.vim.org/scripts/script.php?script_id=2914>`_ Python syntax checker
+* `Solarized <http://ethanschoonover.com/solarized>`_ colour scheme
