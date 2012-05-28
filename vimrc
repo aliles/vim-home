@@ -7,8 +7,6 @@ filetype indent on
 
 runtime macros/matchit.vim
 
-let g:solarized_termtrans=1
-
 set autoindent
 set autoread
 set background=dark
@@ -40,3 +38,7 @@ set wildmenu
 
 syntax on
 colorscheme solarized
+
+if filereadable(glob("~/.vim/vimrc.local")) 
+    source ~/.vim/vimrc.local
+endif

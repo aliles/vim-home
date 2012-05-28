@@ -22,7 +22,7 @@ Clone this Github repository into your home directory as .vim. ::
     $ git clone https://github.com/aliles/vim-home.git .vim
     Cloning into .vim...
 
-Alternatively, you may wish to fork this repository on Github first, so you may
+Alternatively, you may wish to fork this repository on Github first, so you can
 commit your own changes to it.
 
 Now create a symbolic link from *.vim* to the file *~/.vim/vimrc* ::
@@ -41,6 +41,19 @@ already being tracked. ::
 
 Alternatively the configuration options *dirty* can be used to ignore all
 differences over than those between the head and master.
+
+Local Configuration
+===================
+
+After loading the default configuration, local configuration will be loaded
+from *~/.vim/vimrc.local*, if present. This is useful for machine specific
+configuration. For example, I find that with `iTerm2 <http://www.iterm2.com/>`_
+I need to put the following in local configuration. ::
+
+    let g:solarized_termtrans=1
+    colorscheme solarized
+
+This enables Solarized to handle the transparent terminal background.
 
 Updating
 ========
@@ -70,6 +83,7 @@ useful.
 * `Vim: revisited <http://mislav.uniqpath.com/2011/12/vim-revisited/>`_
 * `Turning Vim into a modern Python IDE <Turning Vim into a modern Python IDE>`_
 * `The cleanest vimrc you'll ever see <http://yanpritzker.com/2012/01/20/the-cleanest-vimrc-youve-ever-seen/>`_
+* `Local .vimrc files <http://blog.sanctum.geek.nz/local-vimrc-files/>`_
 
 I found these of varying degrees of values when configuring *Vim* for myself.
 
