@@ -13,6 +13,7 @@ set background=dark
 set backup
 set backspace=indent,eol,start
 set backupdir=~/.vim-tmp
+set colorcolumn=80
 set directory=~/.vim-tmp
 set encoding=utf-8
 set expandtab
